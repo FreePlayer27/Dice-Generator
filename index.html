@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <style>
+            .container { 
+                display: flex; 
+                min-height: 72vh; 
+                align-items: stretch; 
+            }
+            .column { 
+                display: flex; 
+                flex-direction: column; 
+                justify-content: center; 
+                align-items: center; 
+                flex: 1; 
+            }
+            .btnRollDice{
+                background-color: silver;
+                height: 40px;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        </style>
+</head>
+<body>
+    <h1 style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">Dice Generator</h1>
+    <div class="container" >
+        <div class="column">
+            <h1>D6</h1><br/>
+            <img width="300" src="https://www.thediceshoponline.com/media/catalog/product/cache/f29f0998c4cc5290cdd61c5e4e3f186e/i/m/img_7321b.png" alt="D6 dice"><br/>
+            <h1 id="resultRollD6">Press "Roll dice"</h1><br/>
+            <button id="btnRollD6" class="btnRollDice" onclick="btnColumn1Color()">Roll dice</button>
+            
+        </div>
+        <div class="column">
+            <h1>D10</h1><br/>
+            <img width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ0GROQ-fRDx7FEX5YKMPm1WrEzaAylgaD7Q&s" alt="D6 dice"><br/>
+            <h1 id="resultRollD10">Press "Roll dice"</h1><br/>
+            <button id="btnRollD10" class="btnRollDice" onclick="btnColumn2Color()">Roll dice</button>
+        </div>
+    </div>
+    <script src="exercise3.js"></script>
+</body>
+</html>
