@@ -5,7 +5,15 @@ function rollDice(number_of_faces){
 
 }
 
-// testing rolling dice of D6
+// Function of 'onclick' button event
+function processRollingDice(number_of_faces){
+
+    let lRollingDiceResult = rollDice(number_of_faces);
+    
+    document.getElementById("btnRollD" + number_of_faces).innerText = lRollingDiceResult;
+}
+
+// Testing rolling dice of D6
 for (let index = 0; index < 100; index++) {
 
     let lresult = rollDice(6);
@@ -13,7 +21,6 @@ for (let index = 0; index < 100; index++) {
     if ( 0 > lresult || lresult > 6) { error }
     
 }
-
 
 // testing rolling dice of D10
 for (let index = 0; index < 100; index++) {
