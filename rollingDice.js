@@ -10,7 +10,7 @@ function processRollingDice(number_of_faces){
 
     let lRollingDiceResult = rollDice(number_of_faces);
     
-    document.getElementById("btnRollD" + number_of_faces).innerText = lRollingDiceResult;
+    document.getElementById("resultRollD" + number_of_faces).innerText = lRollingDiceResult;
 }
 
 // Testing rolling dice of D6
